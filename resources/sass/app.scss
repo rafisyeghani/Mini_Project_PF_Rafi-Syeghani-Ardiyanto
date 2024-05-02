@@ -1,0 +1,113 @@
+// // Fonts
+// @import url('https://fonts.bunny.net/css?family=Nunito');
+
+// // Variables
+// @import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100;200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.home-kanan {
+    align-items: center;
+    padding-right: 6rem;
+    padding-left: 2rem;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+.home-kanan button {
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    background-color: #000000;
+    margin-left: 26rem;
+}
+
+.home-kanan button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.error-message {
+    font-size: 13px;
+}
+
+.card{
+    border:none;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#919191;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#000000;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.buttons button:nth-child(1){
+       border:1px solid #000000 !important;
+       color:#000000;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #000000 !important;
+       color:#fff;
+       height:40px;
+       background-color:#000000;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #000000 !important;
+       background-color:#000000;
+       color:#fff;
+        height:40px;
+}
